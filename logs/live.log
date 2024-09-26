@@ -2262,3 +2262,1898 @@ and stateless tasks: [0_1, 0_0]
 2024-09-26T18:10:10.374+05:30  INFO 35170 --- [iot--monitoring] [iot--monitoring-16644096-78be-4069-945c-31139eb58b5d-CloseThread] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-16644096-78be-4069-945c-31139eb58b5d] State transition from PENDING_SHUTDOWN to NOT_RUNNING
 2024-09-26T18:10:10.375+05:30  INFO 35170 --- [iot--monitoring] [RMI TCP Connection(10)-127.0.0.1] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-16644096-78be-4069-945c-31139eb58b5d] Streams client stopped completely
 2024-09-26T18:10:10.392+05:30  INFO 35170 --- [iot--monitoring] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26T18:15:26.346+05:30  INFO 36577 --- [iot--monitoring] [main] c.i.monitoring.IotMonitoringApplication  : Starting IotMonitoringApplication using Java 17.0.12 with PID 36577 (/home/krishnab/Desktop/true-track-sharing/iot--monitoring/target/classes started by krishnab in /home/krishnab/Desktop/true-track-sharing/iot--monitoring)
+2024-09-26T18:15:26.353+05:30  INFO 36577 --- [iot--monitoring] [main] c.i.monitoring.IotMonitoringApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T18:15:28.041+05:30  INFO 36577 --- [iot--monitoring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26T18:15:28.163+05:30  INFO 36577 --- [iot--monitoring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 2 JPA repository interfaces.
+2024-09-26T18:15:29.353+05:30  INFO 36577 --- [iot--monitoring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-26T18:15:29.382+05:30  INFO 36577 --- [iot--monitoring] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T18:15:29.383+05:30  INFO 36577 --- [iot--monitoring] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-26T18:15:29.488+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T18:15:29.489+05:30  INFO 36577 --- [iot--monitoring] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2942 ms
+2024-09-26T18:15:30.292+05:30  INFO 36577 --- [iot--monitoring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26T18:15:30.462+05:30  INFO 36577 --- [iot--monitoring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-26T18:15:30.594+05:30  INFO 36577 --- [iot--monitoring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-26T18:15:31.258+05:30  INFO 36577 --- [iot--monitoring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26T18:15:33.891+05:30  INFO 36577 --- [iot--monitoring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26T18:15:33.969+05:30  INFO 36577 --- [iot--monitoring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26T18:15:34.254+05:30  INFO 36577 --- [iot--monitoring] [main] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = iot--monitoring
+	application.server = 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.client.supplier = class org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = null
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = null
+	dsl.store.suppliers.class = class org.apache.kafka.streams.state.BuiltInDslStoreSuppliers$RocksDBDslStoreSuppliers
+	enable.metrics.push = true
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	rack.aware.assignment.non_overlap_cost = null
+	rack.aware.assignment.strategy = none
+	rack.aware.assignment.tags = []
+	rack.aware.assignment.traffic_cost = null
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	statestore.cache.max.bytes = 10485760
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2024-09-26T18:15:34.896+05:30  WARN 36577 --- [iot--monitoring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26T18:15:35.933+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-09-26T18:15:36.045+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:15:36.046+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:15:36.046+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354736042
+2024-09-26T18:15:36.706+05:30  INFO 36577 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-admin-0] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for iot--monitoring-admin-0 unregistered
+2024-09-26T18:15:36.724+05:30  INFO 36577 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:15:36.725+05:30  INFO 36577 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-admin-0] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:15:36.725+05:30  INFO 36577 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:15:36.772+05:30  INFO 36577 --- [iot--monitoring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-26T18:15:36.784+05:30  INFO 36577 --- [iot--monitoring] [main] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = iot--monitoring
+	application.server = 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.client.supplier = class org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = null
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = null
+	dsl.store.suppliers.class = class org.apache.kafka.streams.state.BuiltInDslStoreSuppliers$RocksDBDslStoreSuppliers
+	enable.metrics.push = true
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	rack.aware.assignment.non_overlap_cost = null
+	rack.aware.assignment.strategy = none
+	rack.aware.assignment.tags = []
+	rack.aware.assignment.traffic_cost = null
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	statestore.cache.max.bytes = 10485760
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2024-09-26T18:15:36.834+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-09-26T18:15:36.842+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:15:36.842+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:15:36.843+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354736842
+2024-09-26T18:15:36.846+05:30  INFO 36577 --- [iot--monitoring] [main] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9] Kafka Streams version: 3.7.1
+2024-09-26T18:15:36.847+05:30  INFO 36577 --- [iot--monitoring] [main] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9] Kafka Streams commit ID: e2494e6ffb89f828
+2024-09-26T18:15:36.886+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Creating restore consumer client
+2024-09-26T18:15:36.895+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-09-26T18:15:36.965+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-26T18:15:37.035+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:15:37.036+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:15:37.036+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354737035
+2024-09-26T18:15:37.053+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Creating thread producer client
+2024-09-26T18:15:37.063+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2024-09-26T18:15:37.065+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-26T18:15:37.084+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-producer] Instantiated an idempotent producer.
+2024-09-26T18:15:37.123+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:15:37.124+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:15:37.124+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354737123
+2024-09-26T18:15:37.140+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Creating consumer client
+2024-09-26T18:15:37.146+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = iot--monitoring
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-09-26T18:15:37.150+05:30  INFO 36577 --- [iot--monitoring] [kafka-producer-network-thread | iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-producer] org.apache.kafka.clients.Metadata        : [Producer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-producer] Cluster ID: VUdoLwOmTQyTvMPhJfmuoQ
+2024-09-26T18:15:37.156+05:30  INFO 36577 --- [iot--monitoring] [kafka-producer-network-thread | iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-producer] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-producer] ProducerId set to 10 with epoch 0
+2024-09-26T18:15:37.162+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-26T18:15:37.186+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.s.p.i.a.AssignorConfiguration      : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2024-09-26T18:15:37.221+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.clients.consumer.ConsumerConfig    : These configurations '[replication.factor, probing.rebalance.interval.ms, max.warmup.replicas, acceptable.recovery.lag, rack.aware.assignment.non_overlap_cost, application.server, rack.aware.assignment.strategy, rack.aware.assignment.traffic_cost, windowstore.changelog.additional.retention.ms, num.standby.replicas, upgrade.from, rack.aware.assignment.tags, application.id]' were supplied but are not used yet.
+2024-09-26T18:15:37.221+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:15:37.221+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:15:37.222+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354737221
+2024-09-26T18:15:37.235+05:30  INFO 36577 --- [iot--monitoring] [main] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9] State transition from CREATED to REBALANCING
+2024-09-26T18:15:37.237+05:30  INFO 36577 --- [iot--monitoring] [main] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9] Started 1 stream threads
+2024-09-26T18:15:37.237+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Starting
+2024-09-26T18:15:37.237+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] State transition from CREATED to STARTING
+2024-09-26T18:15:37.240+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Subscribed to topic(s): health
+2024-09-26T18:15:37.268+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Cluster ID: VUdoLwOmTQyTvMPhJfmuoQ
+2024-09-26T18:15:37.271+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Discovered group coordinator krishnab:9092 (id: 2147483647 rack: null)
+2024-09-26T18:15:37.274+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] (Re-)joining group
+2024-09-26T18:15:37.284+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-iot-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = iot-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-09-26T18:15:37.285+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-26T18:15:37.300+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:15:37.300+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:15:37.300+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354737300
+2024-09-26T18:15:37.304+05:30  INFO 36577 --- [iot--monitoring] [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Subscribed to topic(s): health-output
+2024-09-26T18:15:37.323+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Request joining group due to: need to re-join with the given member-id: iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer-fc322200-edff-48fd-9903-5bfb69cd5251
+2024-09-26T18:15:37.324+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] (Re-)joining group
+2024-09-26T18:15:37.340+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Successfully joined group with generation Generation{generationId=4, memberId='iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer-fc322200-edff-48fd-9903-5bfb69cd5251', protocol='stream'}
+2024-09-26T18:15:37.353+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Cluster ID: VUdoLwOmTQyTvMPhJfmuoQ
+2024-09-26T18:15:37.358+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Discovered group coordinator krishnab:9092 (id: 2147483647 rack: null)
+2024-09-26T18:15:37.360+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] (Re-)joining group
+2024-09-26T18:15:37.371+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Request joining group due to: need to re-join with the given member-id: consumer-iot-group-1-fe61088a-71c4-4ccc-9e05-2a6075d8c1a2
+2024-09-26T18:15:37.373+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] (Re-)joining group
+2024-09-26T18:15:37.367+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.RepartitionTopics    : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer] Skipping the repartition topic validation since there are no repartition topics.
+2024-09-26T18:15:37.378+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Successfully joined group with generation Generation{generationId=5, memberId='consumer-iot-group-1-fe61088a-71c4-4ccc-9e05-2a6075d8c1a2', protocol='range'}
+2024-09-26T18:15:37.390+05:30  INFO 36577 --- [iot--monitoring] [main] c.i.monitoring.IotMonitoringApplication  : Started IotMonitoringApplication in 12.057 seconds (process running for 13.344)
+2024-09-26T18:15:37.409+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Finished assignment for group at generation 5: {consumer-iot-group-1-fe61088a-71c4-4ccc-9e05-2a6075d8c1a2=Assignment(partitions=[health-output-0, health-output-1])}
+2024-09-26T18:15:37.412+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer] 1 client nodes and Optional[1] consumers participating in this rebalance: 
+163922a2-ba10-4109-b800-49259e2373e9: [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer-fc322200-edff-48fd-9903-5bfb69cd5251].
+2024-09-26T18:15:37.413+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer] Assigning stateful tasks: []
+and stateless tasks: [0_1, 0_0]
+2024-09-26T18:15:37.423+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Successfully synced group in generation Generation{generationId=5, memberId='consumer-iot-group-1-fe61088a-71c4-4ccc-9e05-2a6075d8c1a2', protocol='range'}
+2024-09-26T18:15:37.425+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Notifying assignor about the new Assignment(partitions=[health-output-0, health-output-1])
+2024-09-26T18:15:37.430+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] a.k.s.p.i.a.HighAvailabilityTaskAssignor : Decided on assignment: {163922a2-ba10-4109-b800-49259e2373e9=[activeTasks: ([0_0, 0_1]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([]) clientTags: ([]) capacity: 1 assigned: 2]} with no followup probing rebalance.
+2024-09-26T18:15:37.430+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer] Assigned 2 total tasks including 0 stateful tasks to 1 client nodes.
+2024-09-26T18:15:37.431+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer] Assignment of tasks to nodes: 163922a2-ba10-4109-b800-49259e2373e9=[activeTasks: ([0_0, 0_1]) standbyTasks: ([])]
+2024-09-26T18:15:37.433+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Adding newly assigned partitions: health-output-0, health-output-1
+2024-09-26T18:15:37.439+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer] Client 163922a2-ba10-4109-b800-49259e2373e9 per-consumer assignment:
+	prev owned active {}
+	prev owned standby {iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer-fc322200-edff-48fd-9903-5bfb69cd5251=[]}
+	assigned active {iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer-fc322200-edff-48fd-9903-5bfb69cd5251=[0_1, 0_0]}
+	revoking active {}
+	assigned standby {}
+
+2024-09-26T18:15:37.440+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2024-09-26T18:15:37.440+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Finished assignment for group at generation 4: {iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer-fc322200-edff-48fd-9903-5bfb69cd5251=Assignment(partitions=[health-0, health-1], userDataSize=64)}
+2024-09-26T18:15:37.446+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Successfully synced group in generation Generation{generationId=4, memberId='iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer-fc322200-edff-48fd-9903-5bfb69cd5251', protocol='stream'}
+2024-09-26T18:15:37.447+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Updating assignment with
+	Assigned partitions:                       [health-0, health-1]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [health-0, health-1]
+	Revoked partitions (owned - assigned):     []
+
+2024-09-26T18:15:37.447+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Notifying assignor about the new Assignment(partitions=[health-0, health-1], userDataSize=64)
+2024-09-26T18:15:37.449+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2024-09-26T18:15:37.452+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_1, 0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2024-09-26T18:15:37.463+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition health-output-1 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[krishnab:9092 (id: 0 rack: null)], epoch=0}}
+2024-09-26T18:15:37.464+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition health-output-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[krishnab:9092 (id: 0 rack: null)], epoch=0}}
+2024-09-26T18:15:37.468+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : iot-group: partitions assigned: [health-output-0, health-output-1]
+2024-09-26T18:15:37.502+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Adding newly assigned partitions: health-0, health-1
+2024-09-26T18:15:37.503+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2024-09-26T18:15:37.506+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] task [0_1] Initialized
+2024-09-26T18:15:37.507+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] task [0_0] Initialized
+2024-09-26T18:15:37.520+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] task [0_1] Restored and ready to run
+2024-09-26T18:15:37.523+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] task [0_0] Restored and ready to run
+2024-09-26T18:15:37.525+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Restoration took 22 ms for all active tasks [0_1, 0_0]
+2024-09-26T18:15:37.525+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2024-09-26T18:15:37.529+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9] State transition from REBALANCING to RUNNING
+2024-09-26T18:15:37.532+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Requesting the log end offset for health-0 in order to compute lag
+2024-09-26T18:15:37.540+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer, groupId=iot--monitoring] Requesting the log end offset for health-1 in order to compute lag
+2024-09-26T18:15:37.542+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2024-09-26T18:15:37.549+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition health-0 to the committed offset FetchPosition{offset=7, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[krishnab:9092 (id: 0 rack: null)], epoch=0}}
+2024-09-26T18:15:37.549+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition health-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[krishnab:9092 (id: 0 rack: null)], epoch=0}}
+2024-09-26T18:15:42.747+05:30  INFO 36577 --- [iot--monitoring] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T18:15:42.749+05:30  INFO 36577 --- [iot--monitoring] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T18:15:42.752+05:30  INFO 36577 --- [iot--monitoring] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-26T18:15:42.911+05:30  INFO 36577 --- [iot--monitoring] [http-nio-8080-exec-3] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-09-26T18:15:42.912+05:30  INFO 36577 --- [iot--monitoring] [http-nio-8080-exec-3] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-26T18:15:42.914+05:30  INFO 36577 --- [iot--monitoring] [http-nio-8080-exec-3] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=iot--monitoring-producer-1] Instantiated an idempotent producer.
+2024-09-26T18:15:42.926+05:30  INFO 36577 --- [iot--monitoring] [http-nio-8080-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:15:42.927+05:30  INFO 36577 --- [iot--monitoring] [http-nio-8080-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:15:42.927+05:30  INFO 36577 --- [iot--monitoring] [http-nio-8080-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354742926
+2024-09-26T18:15:42.945+05:30  INFO 36577 --- [iot--monitoring] [kafka-producer-network-thread | iot--monitoring-producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=iot--monitoring-producer-1] Cluster ID: VUdoLwOmTQyTvMPhJfmuoQ
+2024-09-26T18:15:42.954+05:30  INFO 36577 --- [iot--monitoring] [kafka-producer-network-thread | iot--monitoring-producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=iot--monitoring-producer-1] ProducerId set to 11 with epoch 0
+2024-09-26T18:17:37.587+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Processed 3 total records, ran 0 punctuators, and committed 2 total tasks since the last update
+2024-09-26T18:17:48.275+05:30  INFO 36577 --- [iot--monitoring] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-26T18:17:48.283+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Revoke previously assigned partitions health-output-0, health-output-1
+2024-09-26T18:17:48.285+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : iot-group: partitions revoked: [health-output-0, health-output-1]
+2024-09-26T18:17:48.286+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Member consumer-iot-group-1-fe61088a-71c4-4ccc-9e05-2a6075d8c1a2 sending LeaveGroup request to coordinator krishnab:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2024-09-26T18:17:48.287+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-09-26T18:17:48.288+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Request joining group due to: consumer pro-actively leaving the group
+2024-09-26T18:17:48.289+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Unsubscribed all topics or patterns and assigned partitions
+2024-09-26T18:17:48.296+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-09-26T18:17:48.296+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Request joining group due to: consumer pro-actively leaving the group
+2024-09-26T18:17:48.757+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:17:48.757+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:17:48.757+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-26T18:17:48.758+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:17:48.774+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-iot-group-1 unregistered
+2024-09-26T18:17:48.776+05:30  INFO 36577 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : iot-group: Consumer stopped
+2024-09-26T18:17:48.779+05:30  INFO 36577 --- [iot--monitoring] [RMI TCP Connection(12)-127.0.0.1] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9] State transition from RUNNING to PENDING_SHUTDOWN
+2024-09-26T18:17:48.783+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-CloseThread] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Informed to shut down
+2024-09-26T18:17:48.783+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-CloseThread] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2024-09-26T18:17:48.783+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-CloseThread] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9] Shutting down 1 stream threads
+2024-09-26T18:17:48.842+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Shutting down clean
+2024-09-26T18:17:48.848+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] task [0_0] Suspended from RUNNING
+2024-09-26T18:17:48.853+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.RecordCollectorImpl  : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] stream-task [0_0] Closing record collector clean
+2024-09-26T18:17:48.855+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] task [0_0] Closed clean
+2024-09-26T18:17:48.858+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] task [0_1] Suspended from RUNNING
+2024-09-26T18:17:48.861+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.RecordCollectorImpl  : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] stream-task [0_1] Closing record collector clean
+2024-09-26T18:17:48.861+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] task [0_1] Closed clean
+2024-09-26T18:17:48.863+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-producer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2024-09-26T18:17:48.879+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:17:48.880+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:17:48.880+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-26T18:17:48.880+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:17:48.882+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-producer unregistered
+2024-09-26T18:17:48.883+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Shutdown complete
+2024-09-26T18:17:48.884+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2024-09-26T18:17:49.137+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:17:49.138+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:17:49.138+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-26T18:17:49.138+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:17:49.156+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-consumer unregistered
+2024-09-26T18:17:49.157+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:17:49.157+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:17:49.157+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-26T18:17:49.157+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:17:49.164+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1-restore-consumer unregistered
+2024-09-26T18:17:49.166+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2024-09-26T18:17:49.167+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-StreamThread-1] Shutdown complete
+2024-09-26T18:17:49.167+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-CloseThread] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9] Shutdown 1 stream threads complete
+2024-09-26T18:17:49.168+05:30  INFO 36577 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-admin] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-admin unregistered
+2024-09-26T18:17:49.171+05:30  INFO 36577 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-admin] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:17:49.171+05:30  INFO 36577 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-admin] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:17:49.171+05:30  INFO 36577 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-admin] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:17:49.172+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-CloseThread] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:17:49.172+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-CloseThread] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:17:49.172+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-CloseThread] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:17:49.172+05:30  INFO 36577 --- [iot--monitoring] [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9-CloseThread] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2024-09-26T18:17:49.172+05:30  INFO 36577 --- [iot--monitoring] [RMI TCP Connection(12)-127.0.0.1] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-163922a2-ba10-4109-b800-49259e2373e9] Streams client stopped completely
+2024-09-26T18:17:49.181+05:30  INFO 36577 --- [iot--monitoring] [RMI TCP Connection(12)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=iot--monitoring-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-09-26T18:17:49.188+05:30  INFO 36577 --- [iot--monitoring] [RMI TCP Connection(12)-127.0.0.1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:17:49.188+05:30  INFO 36577 --- [iot--monitoring] [RMI TCP Connection(12)-127.0.0.1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:17:49.188+05:30  INFO 36577 --- [iot--monitoring] [RMI TCP Connection(12)-127.0.0.1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-26T18:17:49.189+05:30  INFO 36577 --- [iot--monitoring] [RMI TCP Connection(12)-127.0.0.1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:17:49.190+05:30  INFO 36577 --- [iot--monitoring] [RMI TCP Connection(12)-127.0.0.1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for iot--monitoring-producer-1 unregistered
+2024-09-26T18:17:49.196+05:30  INFO 36577 --- [iot--monitoring] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26T18:17:55.313+05:30  INFO 37128 --- [iot--monitoring] [main] c.i.monitoring.IotMonitoringApplication  : Starting IotMonitoringApplication using Java 17.0.12 with PID 37128 (/home/krishnab/Desktop/true-track-sharing/iot--monitoring/target/classes started by krishnab in /home/krishnab/Desktop/true-track-sharing/iot--monitoring)
+2024-09-26T18:17:55.320+05:30  INFO 37128 --- [iot--monitoring] [main] c.i.monitoring.IotMonitoringApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T18:17:56.966+05:30  INFO 37128 --- [iot--monitoring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-26T18:17:57.102+05:30  INFO 37128 --- [iot--monitoring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 2 JPA repository interfaces.
+2024-09-26T18:17:58.392+05:30  INFO 37128 --- [iot--monitoring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-26T18:17:58.420+05:30  INFO 37128 --- [iot--monitoring] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T18:17:58.420+05:30  INFO 37128 --- [iot--monitoring] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-26T18:17:58.545+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T18:17:58.545+05:30  INFO 37128 --- [iot--monitoring] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3072 ms
+2024-09-26T18:17:59.239+05:30  INFO 37128 --- [iot--monitoring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-26T18:17:59.346+05:30  INFO 37128 --- [iot--monitoring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-26T18:17:59.442+05:30  INFO 37128 --- [iot--monitoring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-26T18:18:00.057+05:30  INFO 37128 --- [iot--monitoring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-26T18:18:01.891+05:30  INFO 37128 --- [iot--monitoring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-26T18:18:01.946+05:30  INFO 37128 --- [iot--monitoring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-26T18:18:02.170+05:30  INFO 37128 --- [iot--monitoring] [main] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = iot--monitoring
+	application.server = 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.client.supplier = class org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = null
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = null
+	dsl.store.suppliers.class = class org.apache.kafka.streams.state.BuiltInDslStoreSuppliers$RocksDBDslStoreSuppliers
+	enable.metrics.push = true
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	rack.aware.assignment.non_overlap_cost = null
+	rack.aware.assignment.strategy = none
+	rack.aware.assignment.tags = []
+	rack.aware.assignment.traffic_cost = null
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	statestore.cache.max.bytes = 10485760
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2024-09-26T18:18:03.217+05:30  WARN 37128 --- [iot--monitoring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-26T18:18:04.702+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-09-26T18:18:04.908+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:18:04.909+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:18:04.910+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354884903
+2024-09-26T18:18:05.705+05:30  INFO 37128 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-admin-0] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for iot--monitoring-admin-0 unregistered
+2024-09-26T18:18:05.731+05:30  INFO 37128 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:18:05.732+05:30  INFO 37128 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-admin-0] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:18:05.733+05:30  INFO 37128 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:18:05.785+05:30  INFO 37128 --- [iot--monitoring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-26T18:18:05.797+05:30  INFO 37128 --- [iot--monitoring] [main] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = iot--monitoring
+	application.server = 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.client.supplier = class org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = null
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = null
+	dsl.store.suppliers.class = class org.apache.kafka.streams.state.BuiltInDslStoreSuppliers$RocksDBDslStoreSuppliers
+	enable.metrics.push = true
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	rack.aware.assignment.non_overlap_cost = null
+	rack.aware.assignment.strategy = none
+	rack.aware.assignment.tags = []
+	rack.aware.assignment.traffic_cost = null
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	statestore.cache.max.bytes = 10485760
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2024-09-26T18:18:05.889+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-09-26T18:18:05.901+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:18:05.902+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:18:05.902+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354885901
+2024-09-26T18:18:05.907+05:30  INFO 37128 --- [iot--monitoring] [main] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545] Kafka Streams version: 3.7.1
+2024-09-26T18:18:05.907+05:30  INFO 37128 --- [iot--monitoring] [main] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545] Kafka Streams commit ID: e2494e6ffb89f828
+2024-09-26T18:18:05.941+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] Creating restore consumer client
+2024-09-26T18:18:05.948+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-09-26T18:18:06.026+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-26T18:18:06.116+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:18:06.117+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:18:06.117+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354886116
+2024-09-26T18:18:06.136+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] Creating thread producer client
+2024-09-26T18:18:06.149+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2024-09-26T18:18:06.152+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-26T18:18:06.172+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-producer] Instantiated an idempotent producer.
+2024-09-26T18:18:06.221+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:18:06.222+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:18:06.222+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354886221
+2024-09-26T18:18:06.240+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] Creating consumer client
+2024-09-26T18:18:06.248+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = iot--monitoring
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2024-09-26T18:18:06.254+05:30  INFO 37128 --- [iot--monitoring] [kafka-producer-network-thread | iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-producer] org.apache.kafka.clients.Metadata        : [Producer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-producer] Cluster ID: VUdoLwOmTQyTvMPhJfmuoQ
+2024-09-26T18:18:06.261+05:30  INFO 37128 --- [iot--monitoring] [kafka-producer-network-thread | iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-producer] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-producer] ProducerId set to 12 with epoch 0
+2024-09-26T18:18:06.273+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-26T18:18:06.317+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.s.p.i.a.AssignorConfiguration      : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2024-09-26T18:18:06.365+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.clients.consumer.ConsumerConfig    : These configurations '[replication.factor, probing.rebalance.interval.ms, max.warmup.replicas, acceptable.recovery.lag, rack.aware.assignment.non_overlap_cost, application.server, rack.aware.assignment.strategy, rack.aware.assignment.traffic_cost, windowstore.changelog.additional.retention.ms, num.standby.replicas, upgrade.from, rack.aware.assignment.tags, application.id]' were supplied but are not used yet.
+2024-09-26T18:18:06.368+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:18:06.369+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:18:06.369+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354886368
+2024-09-26T18:18:06.393+05:30  INFO 37128 --- [iot--monitoring] [main] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545] State transition from CREATED to REBALANCING
+2024-09-26T18:18:06.394+05:30  INFO 37128 --- [iot--monitoring] [main] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545] Started 1 stream threads
+2024-09-26T18:18:06.396+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] Starting
+2024-09-26T18:18:06.397+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] State transition from CREATED to STARTING
+2024-09-26T18:18:06.414+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Subscribed to topic(s): health
+2024-09-26T18:18:06.441+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Cluster ID: VUdoLwOmTQyTvMPhJfmuoQ
+2024-09-26T18:18:06.447+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Discovered group coordinator krishnab:9092 (id: 2147483647 rack: null)
+2024-09-26T18:18:06.454+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-iot-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = iot-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-09-26T18:18:06.455+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-26T18:18:06.466+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] (Re-)joining group
+2024-09-26T18:18:06.471+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:18:06.472+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:18:06.472+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354886471
+2024-09-26T18:18:06.475+05:30  INFO 37128 --- [iot--monitoring] [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Subscribed to topic(s): health-output
+2024-09-26T18:18:06.536+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2024-09-26T18:18:06.542+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Cluster ID: VUdoLwOmTQyTvMPhJfmuoQ
+2024-09-26T18:18:06.548+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Request joining group due to: need to re-join with the given member-id: iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer-f5314d40-33c7-4734-89d9-4965ed733182
+2024-09-26T18:18:06.549+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] (Re-)joining group
+2024-09-26T18:18:06.554+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Discovered group coordinator krishnab:9092 (id: 2147483647 rack: null)
+2024-09-26T18:18:06.561+05:30  INFO 37128 --- [iot--monitoring] [main] c.i.monitoring.IotMonitoringApplication  : Started IotMonitoringApplication in 12.408 seconds (process running for 13.583)
+2024-09-26T18:18:06.570+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] (Re-)joining group
+2024-09-26T18:18:06.586+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Request joining group due to: need to re-join with the given member-id: consumer-iot-group-1-d2b9ffb9-abf5-4c09-90aa-27c05e36b845
+2024-09-26T18:18:06.586+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] (Re-)joining group
+2024-09-26T18:18:06.592+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Successfully joined group with generation Generation{generationId=7, memberId='consumer-iot-group-1-d2b9ffb9-abf5-4c09-90aa-27c05e36b845', protocol='range'}
+2024-09-26T18:18:06.614+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Finished assignment for group at generation 7: {consumer-iot-group-1-d2b9ffb9-abf5-4c09-90aa-27c05e36b845=Assignment(partitions=[health-output-0, health-output-1])}
+2024-09-26T18:18:06.635+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Successfully synced group in generation Generation{generationId=7, memberId='consumer-iot-group-1-d2b9ffb9-abf5-4c09-90aa-27c05e36b845', protocol='range'}
+2024-09-26T18:18:06.636+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Notifying assignor about the new Assignment(partitions=[health-output-0, health-output-1])
+2024-09-26T18:18:06.646+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Adding newly assigned partitions: health-output-0, health-output-1
+2024-09-26T18:18:06.682+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition health-output-1 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[krishnab:9092 (id: 0 rack: null)], epoch=0}}
+2024-09-26T18:18:06.685+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition health-output-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[krishnab:9092 (id: 0 rack: null)], epoch=0}}
+2024-09-26T18:18:06.689+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : iot-group: partitions assigned: [health-output-0, health-output-1]
+2024-09-26T18:18:09.379+05:30  INFO 37128 --- [iot--monitoring] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T18:18:09.380+05:30  INFO 37128 --- [iot--monitoring] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T18:18:09.384+05:30  INFO 37128 --- [iot--monitoring] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-26T18:18:31.360+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Successfully joined group with generation Generation{generationId=5, memberId='iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer-f5314d40-33c7-4734-89d9-4965ed733182', protocol='stream'}
+2024-09-26T18:18:31.374+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.RepartitionTopics    : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer] Skipping the repartition topic validation since there are no repartition topics.
+2024-09-26T18:18:31.393+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer] 1 client nodes and Optional[1] consumers participating in this rebalance: 
+671c15a0-dc0f-4baa-87b1-3de2a6219545: [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer-f5314d40-33c7-4734-89d9-4965ed733182].
+2024-09-26T18:18:31.394+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer] Assigning stateful tasks: []
+and stateless tasks: [0_1, 0_0]
+2024-09-26T18:18:31.408+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] a.k.s.p.i.a.HighAvailabilityTaskAssignor : Decided on assignment: {671c15a0-dc0f-4baa-87b1-3de2a6219545=[activeTasks: ([0_0, 0_1]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([]) clientTags: ([]) capacity: 1 assigned: 2]} with no followup probing rebalance.
+2024-09-26T18:18:31.409+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer] Assigned 2 total tasks including 0 stateful tasks to 1 client nodes.
+2024-09-26T18:18:31.411+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer] Assignment of tasks to nodes: 671c15a0-dc0f-4baa-87b1-3de2a6219545=[activeTasks: ([0_0, 0_1]) standbyTasks: ([])]
+2024-09-26T18:18:31.418+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer] Client 671c15a0-dc0f-4baa-87b1-3de2a6219545 per-consumer assignment:
+	prev owned active {}
+	prev owned standby {iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer-f5314d40-33c7-4734-89d9-4965ed733182=[]}
+	assigned active {iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer-f5314d40-33c7-4734-89d9-4965ed733182=[0_1, 0_0]}
+	revoking active {}
+	assigned standby {}
+
+2024-09-26T18:18:31.419+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2024-09-26T18:18:31.420+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Finished assignment for group at generation 5: {iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer-f5314d40-33c7-4734-89d9-4965ed733182=Assignment(partitions=[health-0, health-1], userDataSize=64)}
+2024-09-26T18:18:31.428+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Successfully synced group in generation Generation{generationId=5, memberId='iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer-f5314d40-33c7-4734-89d9-4965ed733182', protocol='stream'}
+2024-09-26T18:18:31.429+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Updating assignment with
+	Assigned partitions:                       [health-0, health-1]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [health-0, health-1]
+	Revoked partitions (owned - assigned):     []
+
+2024-09-26T18:18:31.430+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Notifying assignor about the new Assignment(partitions=[health-0, health-1], userDataSize=64)
+2024-09-26T18:18:31.431+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2024-09-26T18:18:31.435+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_1, 0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2024-09-26T18:18:31.500+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Adding newly assigned partitions: health-0, health-1
+2024-09-26T18:18:31.501+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2024-09-26T18:18:31.504+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition health-0 to the committed offset FetchPosition{offset=7, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[krishnab:9092 (id: 0 rack: null)], epoch=0}}
+2024-09-26T18:18:31.504+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition health-1 to the committed offset FetchPosition{offset=5, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[krishnab:9092 (id: 0 rack: null)], epoch=0}}
+2024-09-26T18:18:31.524+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] task [0_0] Initialized
+2024-09-26T18:18:31.525+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] task [0_1] Initialized
+2024-09-26T18:18:31.540+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] task [0_0] Restored and ready to run
+2024-09-26T18:18:31.543+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] task [0_1] Restored and ready to run
+2024-09-26T18:18:31.545+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] Restoration took 44 ms for all active tasks [0_1, 0_0]
+2024-09-26T18:18:31.546+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2024-09-26T18:18:31.550+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545] State transition from REBALANCING to RUNNING
+2024-09-26T18:18:31.551+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Requesting the log end offset for health-0 in order to compute lag
+2024-09-26T18:18:31.559+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer, groupId=iot--monitoring] Requesting the log end offset for health-1 in order to compute lag
+2024-09-26T18:18:42.276+05:30  INFO 37128 --- [iot--monitoring] [http-nio-8080-exec-5] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = iot--monitoring-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-09-26T18:18:42.277+05:30  INFO 37128 --- [iot--monitoring] [http-nio-8080-exec-5] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-26T18:18:42.279+05:30  INFO 37128 --- [iot--monitoring] [http-nio-8080-exec-5] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=iot--monitoring-producer-1] Instantiated an idempotent producer.
+2024-09-26T18:18:42.296+05:30  INFO 37128 --- [iot--monitoring] [http-nio-8080-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-26T18:18:42.297+05:30  INFO 37128 --- [iot--monitoring] [http-nio-8080-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-26T18:18:42.297+05:30  INFO 37128 --- [iot--monitoring] [http-nio-8080-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727354922296
+2024-09-26T18:18:42.310+05:30  INFO 37128 --- [iot--monitoring] [kafka-producer-network-thread | iot--monitoring-producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=iot--monitoring-producer-1] Cluster ID: VUdoLwOmTQyTvMPhJfmuoQ
+2024-09-26T18:18:42.316+05:30  INFO 37128 --- [iot--monitoring] [kafka-producer-network-thread | iot--monitoring-producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=iot--monitoring-producer-1] ProducerId set to 13 with epoch 0
+2024-09-26T18:19:02.032+05:30  INFO 37128 --- [iot--monitoring] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-26T18:19:02.041+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Revoke previously assigned partitions health-output-0, health-output-1
+2024-09-26T18:19:02.042+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : iot-group: partitions revoked: [health-output-0, health-output-1]
+2024-09-26T18:19:02.043+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Member consumer-iot-group-1-d2b9ffb9-abf5-4c09-90aa-27c05e36b845 sending LeaveGroup request to coordinator krishnab:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2024-09-26T18:19:02.045+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-09-26T18:19:02.046+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Request joining group due to: consumer pro-actively leaving the group
+2024-09-26T18:19:02.046+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Unsubscribed all topics or patterns and assigned partitions
+2024-09-26T18:19:02.049+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-09-26T18:19:02.050+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-iot-group-1, groupId=iot-group] Request joining group due to: consumer pro-actively leaving the group
+2024-09-26T18:19:02.521+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:19:02.521+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:19:02.522+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-26T18:19:02.522+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:19:02.533+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-iot-group-1 unregistered
+2024-09-26T18:19:02.534+05:30  INFO 37128 --- [iot--monitoring] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : iot-group: Consumer stopped
+2024-09-26T18:19:02.538+05:30  INFO 37128 --- [iot--monitoring] [RMI TCP Connection(9)-127.0.0.1] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545] State transition from RUNNING to PENDING_SHUTDOWN
+2024-09-26T18:19:02.542+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-CloseThread] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] Informed to shut down
+2024-09-26T18:19:02.543+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-CloseThread] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2024-09-26T18:19:02.543+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-CloseThread] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545] Shutting down 1 stream threads
+2024-09-26T18:19:02.546+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] Shutting down clean
+2024-09-26T18:19:02.553+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] task [0_0] Suspended from RUNNING
+2024-09-26T18:19:02.557+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.RecordCollectorImpl  : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] stream-task [0_0] Closing record collector clean
+2024-09-26T18:19:02.558+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] task [0_0] Closed clean
+2024-09-26T18:19:02.560+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] task [0_1] Suspended from RUNNING
+2024-09-26T18:19:02.562+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.RecordCollectorImpl  : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] stream-task [0_1] Closing record collector clean
+2024-09-26T18:19:02.562+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] task [0_1] Closed clean
+2024-09-26T18:19:02.563+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-producer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2024-09-26T18:19:02.574+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:19:02.575+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:19:02.575+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-26T18:19:02.575+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:19:02.577+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-producer unregistered
+2024-09-26T18:19:02.578+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] Shutdown complete
+2024-09-26T18:19:02.579+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2024-09-26T18:19:02.907+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:19:02.907+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:19:02.908+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-26T18:19:02.908+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:19:02.916+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-consumer unregistered
+2024-09-26T18:19:02.917+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:19:02.918+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:19:02.918+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-26T18:19:02.918+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:19:02.923+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1-restore-consumer unregistered
+2024-09-26T18:19:02.925+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2024-09-26T18:19:02.925+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-StreamThread-1] Shutdown complete
+2024-09-26T18:19:02.926+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-CloseThread] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545] Shutdown 1 stream threads complete
+2024-09-26T18:19:02.927+05:30  INFO 37128 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-admin] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-admin unregistered
+2024-09-26T18:19:02.930+05:30  INFO 37128 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-admin] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:19:02.930+05:30  INFO 37128 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-admin] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:19:02.930+05:30  INFO 37128 --- [iot--monitoring] [kafka-admin-client-thread | iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-admin] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:19:02.931+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-CloseThread] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:19:02.931+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-CloseThread] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:19:02.931+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-CloseThread] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:19:02.932+05:30  INFO 37128 --- [iot--monitoring] [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545-CloseThread] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2024-09-26T18:19:02.932+05:30  INFO 37128 --- [iot--monitoring] [RMI TCP Connection(9)-127.0.0.1] org.apache.kafka.streams.KafkaStreams    : stream-client [iot--monitoring-671c15a0-dc0f-4baa-87b1-3de2a6219545] Streams client stopped completely
+2024-09-26T18:19:02.942+05:30  INFO 37128 --- [iot--monitoring] [RMI TCP Connection(9)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=iot--monitoring-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-09-26T18:19:02.950+05:30  INFO 37128 --- [iot--monitoring] [RMI TCP Connection(9)-127.0.0.1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-09-26T18:19:02.950+05:30  INFO 37128 --- [iot--monitoring] [RMI TCP Connection(9)-127.0.0.1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-09-26T18:19:02.950+05:30  INFO 37128 --- [iot--monitoring] [RMI TCP Connection(9)-127.0.0.1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-09-26T18:19:02.951+05:30  INFO 37128 --- [iot--monitoring] [RMI TCP Connection(9)-127.0.0.1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-09-26T18:19:02.951+05:30  INFO 37128 --- [iot--monitoring] [RMI TCP Connection(9)-127.0.0.1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for iot--monitoring-producer-1 unregistered
+2024-09-26T18:19:02.957+05:30  INFO 37128 --- [iot--monitoring] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

@@ -13,6 +13,6 @@ public class HealthCheckIngestionService {
     }
 
     public void sendHealthCheck(String healthStatus) {
-        kafkaTemplate.send("device-alerts", healthStatus);
+        kafkaTemplate.send("health", healthStatus);
     }
 }

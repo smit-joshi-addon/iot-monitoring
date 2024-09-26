@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: iot--monitoring
+---
+# Kafka Configuration
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: iotGroup
+      auto-offset-reset: earliest
+---
+# HSQLDB Configuration
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:mydb  # In-memory database
+    username: sa
+    password: ''
+---
+# ==============  LOGGING CONFIG ==============
+logging:
+  file:
+    name: logs/live.log
+  logback:
+    rollingpolicy:
+      file-name-pattern: logs/data-share-%d{yyyy-MM-dd}.%i.log
+      clean-history-on-start: true
+      max-file-size: 1MB
+      total-size-cap: 2GB
+      max-history: 2048
+

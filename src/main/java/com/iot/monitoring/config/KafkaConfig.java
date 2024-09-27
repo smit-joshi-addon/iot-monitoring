@@ -20,6 +20,10 @@ import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
+import org.springframework.kafka.support.serializer.JsonDeserializer;
+import org.springframework.kafka.support.serializer.JsonSerializer;
+
+import com.iot.monitoring.dto.VehicleTrackingDTO;
 
 @EnableKafka
 @EnableKafkaStreams
@@ -29,49 +33,51 @@ public class KafkaConfig {
 	@Value("${spring.kafka.bootstrap-servers}")
 	private String bootstrapServers;
 
-	private String HEALTH = "health";
-	private String HEALTH_OUTPUT = "health-output";
+	public static String TELEMTICS_EVENTS = "telematics-events";
+	public static String TELEMTICS_EVENTS_OUTPUT = "telematics-events-output";
 
 	@Bean
-	ProducerFactory<String, String> producerFactory() {
+	ProducerFactory<String, VehicleTrackingDTO> producerFactory() {
 		Map<String, Object> config = new HashMap<>();
 		config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
 		config.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-		config.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+		config.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
 		return new DefaultKafkaProducerFactory<>(config);
 	}
 
 	@Bean
-	KafkaTemplate<String, String> kafkaTemplate() {
+	KafkaTemplate<String, VehicleTrackingDTO> kafkaTemplate() {
 		return new KafkaTemplate<>(producerFactory());
 	}
 
 	@Bean
-	ConsumerFactory<String, String> consumerFactory() {
+	ConsumerFactory<String, VehicleTrackingDTO> consumerFactory() {
 		Map<String, Object> config = new HashMap<>();
 		config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
 		config.put(ConsumerConfig.GROUP_ID_CONFIG, "iot-group");
 		config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-		config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
+		config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
+		  
+	    // Specify the trusted package for deserialization
+	    config.put(JsonDeserializer.TRUSTED_PACKAGES, "com.iot.monitoring.dto");
 		return new DefaultKafkaConsumerFactory<>(config);
 	}
 
 	@Bean
-	ConcurrentKafkaListenerContainerFactory<String, String> kafkaListenerContainerFactory() {
-		ConcurrentKafkaListenerContainerFactory<String, String> factory = new ConcurrentKafkaListenerContainerFactory<>();
+	ConcurrentKafkaListenerContainerFactory<String, VehicleTrackingDTO> kafkaListenerContainerFactory() {
+		ConcurrentKafkaListenerContainerFactory<String, VehicleTrackingDTO> factory = new ConcurrentKafkaListenerContainerFactory<>();
 		factory.setConsumerFactory(consumerFactory());
 		factory.getContainerProperties().setPollTimeout(3000); // Set poll timeout
 		return factory;
 	}
 
 	@Bean
-	NewTopic healthTopic() {
-		return TopicBuilder.name(HEALTH).partitions(2).replicas(1).build();
+	NewTopic telematicsTopic() {
+		return TopicBuilder.name(TELEMTICS_EVENTS).partitions(2).replicas(1).build();
 	}
 
 	@Bean
-	NewTopic healthOutputTopic() {
-		return TopicBuilder.name(HEALTH_OUTPUT).partitions(2).replicas(1).build();
+	NewTopic telematicsOutputTopic() {
+		return TopicBuilder.name(TELEMTICS_EVENTS_OUTPUT).partitions(2).replicas(1).build();
 	}
-
 }

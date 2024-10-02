@@ -22,7 +22,7 @@ public class TelemeticsEventsProducerService {
 	}
 
 	public void produceEvent(VehicleTracking trackingData) {
-		kafkaTemplate.send(KafkaConfig.TELEMTICS_EVENTS, trackingData.getDeviceId().toString(),
+		kafkaTemplate.send(KafkaConfig.TELEMATICS_EVENTS, trackingData.getDeviceId().toString(),
 				VehicleTrackingDTO.mapToVehicleTrackingDTO(trackingData));
 		vehicleTrackingService.save(trackingData);
 	}

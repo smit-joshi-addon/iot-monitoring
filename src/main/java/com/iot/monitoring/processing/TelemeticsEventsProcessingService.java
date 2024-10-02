@@ -20,7 +20,7 @@ public class TelemeticsEventsProcessingService {
 	private long processedEventCount = 0;
 
 	public TelemeticsEventsProcessingService(StreamsBuilder streamsBuilder) {
-		KStream<String, VehicleTrackingDTO> eventStream = streamsBuilder.stream(KafkaConfig.TELEMTICS_EVENTS,
+		KStream<String, VehicleTrackingDTO> eventStream = streamsBuilder.stream(KafkaConfig.TELEMATICS_EVENTS,
 				Consumed.with(Serdes.String(), new JsonSerde<>(VehicleTrackingDTO.class)));
 
 		// Do Some Processing, ex. filter the events by the EventType.NORMAL
@@ -31,7 +31,7 @@ public class TelemeticsEventsProcessingService {
 			processedEventCount++;
 		});
 
-		normalEvents.to(KafkaConfig.TELEMTICS_EVENTS_OUTPUT,
+		normalEvents.to(KafkaConfig.TELEMATICS_EVENTS_OUTPUT,
 				Produced.with(Serdes.String(), new JsonSerde<>(VehicleTrackingDTO.class)));
 	}
 
